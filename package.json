@@ -14,7 +14,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.24.7",
-    "antd-icons": "^0.1.0-alpha.1", 
+    "antd-icons": "^0.1.0-alpha.1",
     "antd-theme": "^0.3.4",
     "audit": "^0.0.6",
     "axios": "^0.27.2",
@@ -82,5 +82,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-keywords": "^5.1.0"
   }
 }
