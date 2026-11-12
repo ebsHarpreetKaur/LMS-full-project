@@ -1,0 +1,859 @@
+.employee-leave-container {
+  width: 100%;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+/* Heading */
+.leave-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  gap: 15px;
+}
+
+.leave-page-heading h2 {
+  font-size: 22px;
+  font-weight: 650;
+  color: #1e293b;
+  margin: 0 0 5px;
+}
+
+.leave-page-heading p,
+.leave-history-header p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Summary cards */
+.employee-leave-summary {
+  border-radius: 10px !important;
+  border: 1px solid #e8edf3 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.employee-leave-summary .ant-card-body {
+  padding: 18px;
+}
+
+.summary-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-card-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 8px 0 0;
+}
+
+.summary-icon {
+  font-size: 28px;
+}
+
+.pending-icon {
+  color: #d99a26;
+}
+
+.approved-icon {
+  color: #239b62;
+}
+
+.rejected-icon {
+  color: #df5964;
+}
+
+.pending-summary {
+  border-left: 4px solid #e9ad3d !important;
+}
+
+.approved-summary {
+  border-left: 4px solid #239b62 !important;
+}
+
+.rejected-summary {
+  border-left: 4px solid #df5964 !important;
+}
+
+/* Table card */
+.leave-history-card {
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.leave-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leave-history-header h3 {
+  color: #1e293b;
+  font-size: 17px;
+  font-weight: 650;
+  margin: 0 0 5px;
+}
+
+/* Filters */
+.leave-table-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.leave-search-input {
+  max-width: 350px;
+  height: 38px;
+  border-radius: 6px !important;
+}
+
+.leave-filter-select {
+  width: 180px;
+}
+
+.leave-filter-select .ant-select-selector {
+  height: 38px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 6px !important;
+}
+
+/* Table */
+.leave-history-card .ant-table {
+  font-size: 13px;
+}
+
+.leave-history-card .ant-table-thead > tr > th {
+  background: #f8fafc !important;
+  color: #475569;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.leave-history-card .ant-table-tbody > tr > td {
+  padding: 14px 12px;
+  color: #475569;
+}
+
+.leave-history-card .ant-table-tbody > tr:hover > td {
+  background: #f8fafc !important;
+}
+
+.leave-id {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.leave-type-text {
+  color: #334155;
+}
+
+/* Status */
+.leave-status-tag {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Details modal */
+.leave-details-modal {
+  padding-top: 8px;
+}
+
+.leave-details-status {
+  margin-bottom: 16px;
+}
+
+.leave-pending-notice {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff7e6;
+  border: 1px solid #ffe0a3;
+  color: #946200;
+  font-size: 13px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .employee-leave-container {
+    padding: 12px;
+  }
+
+  .leave-page-heading {
+    align-items: flex-start;
+  }
+
+  .leave-history-card {
+    padding: 12px;
+  }
+
+  .leave-table-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .leave-search-input,
+  .leave-filter-select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leave-history-header {
+    gap: 10px;
+  }
+}
+
+/* =========================================
+   EMPLOYEE LEAVE PAGE - LIGHT THEME
+========================================= */
+
+.employee-leave-container {
+  width: 100%;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.leave-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  gap: 15px;
+}
+
+.leave-page-heading h2 {
+  font-size: 22px;
+  font-weight: 650;
+  color: #1e293b;
+  margin: 0 0 5px;
+}
+
+.leave-page-heading p,
+.leave-history-header p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Summary cards */
+.employee-leave-summary {
+  border-radius: 10px !important;
+  border: 1px solid #e8edf3 !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  background: #ffffff !important;
+}
+
+.employee-leave-summary .ant-card-body {
+  padding: 18px;
+}
+
+.summary-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-card-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 8px 0 0;
+}
+
+.summary-icon {
+  font-size: 28px;
+}
+
+.pending-icon {
+  color: #d99a26;
+}
+
+.approved-icon {
+  color: #239b62;
+}
+
+.rejected-icon {
+  color: #df5964;
+}
+
+.pending-summary {
+  border-left: 4px solid #e9ad3d !important;
+}
+
+.approved-summary {
+  border-left: 4px solid #239b62 !important;
+}
+
+.rejected-summary {
+  border-left: 4px solid #df5964 !important;
+}
+
+/* Table card */
+.leave-history-card {
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.leave-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.leave-history-header h3 {
+  color: #1e293b;
+  font-size: 17px;
+  font-weight: 650;
+  margin: 0 0 5px;
+}
+
+/* Filters */
+.leave-table-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.leave-search-input {
+  max-width: 350px;
+  height: 38px;
+  border-radius: 6px !important;
+}
+
+.leave-filter-select {
+  width: 180px;
+}
+
+.leave-filter-select .ant-select-selector {
+  height: 38px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 6px !important;
+}
+
+/* Table */
+.leave-history-card .ant-table {
+  font-size: 13px;
+  background: transparent;
+}
+
+.leave-history-card .ant-table-container {
+  border-color: #e8edf3 !important;
+}
+
+.leave-history-card .ant-table-thead > tr > th {
+  background: #f8fafc !important;
+  color: #475569;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.leave-history-card .ant-table-tbody > tr > td {
+  padding: 14px 12px;
+  color: #475569;
+  background: #ffffff;
+}
+
+.leave-history-card .ant-table-tbody > tr:hover > td {
+  background: #f8fafc !important;
+}
+
+.leave-id {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.leave-type-text {
+  color: #334155;
+}
+
+/* Status */
+.leave-status-tag {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Details modal */
+.leave-details-modal {
+  padding-top: 8px;
+}
+
+.leave-details-status {
+  margin-bottom: 16px;
+}
+
+.leave-pending-notice {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff7e6;
+  border: 1px solid #ffe0a3;
+  color: #946200;
+  font-size: 13px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+/* =========================================
+   EMPLOYEE LEAVE PAGE - DARK THEME
+========================================= */
+
+html[data-theme="dark"] .employee-leave-container {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+/* Heading */
+html[data-theme="dark"] .employee-leave-container .leave-page-heading h2,
+html[data-theme="dark"] .employee-leave-container .leave-history-header h3 {
+  color: #f9fafb !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-page-heading p,
+html[data-theme="dark"] .employee-leave-container .leave-history-header p {
+  color: #9ca3af !important;
+}
+
+/* Summary cards */
+html[data-theme="dark"] .employee-leave-container .employee-leave-summary {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .employee-leave-container .summary-card-content h2 {
+  color: #f9fafb !important;
+}
+
+/* Preserve colored summary borders */
+html[data-theme="dark"] .employee-leave-container .pending-summary {
+  border-left: 4px solid #e9ad3d !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .approved-summary {
+  border-left: 4px solid #239b62 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .rejected-summary {
+  border-left: 4px solid #df5964 !important;
+}
+
+/* History card */
+html[data-theme="dark"] .employee-leave-container .leave-history-card {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+/* Filters */
+html[data-theme="dark"] .employee-leave-container .leave-search-input,
+html[data-theme="dark"] .employee-leave-container .leave-search-input input {
+  background: #273449 !important;
+  border-color: #4b5563 !important;
+  color: #f3f4f6 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-search-input input::placeholder {
+  color: #9ca3af !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-filter-select .ant-select-selector {
+  background: #273449 !important;
+  border-color: #4b5563 !important;
+  color: #f3f4f6 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-filter-select .ant-select-selection-item,
+html[data-theme="dark"] .employee-leave-container .leave-filter-select .ant-select-selection-placeholder {
+  color: #e5e7eb !important;
+}
+
+/* Table */
+html[data-theme="dark"] .employee-leave-container .ant-table,
+html[data-theme="dark"] .employee-leave-container .ant-table-container,
+html[data-theme="dark"] .employee-leave-container .ant-table-content,
+html[data-theme="dark"] .employee-leave-container .ant-table table {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-table-thead > tr > th {
+  background: #273449 !important;
+  color: #e5e7eb !important;
+  border-color: #374151 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-table-tbody > tr > td {
+  background: #1f2937 !important;
+  color: #d1d5db !important;
+  border-color: #374151 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-table-tbody > tr:hover > td {
+  background: #273449 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-id {
+  color: #9ca3af !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .leave-type-text {
+  color: #e5e7eb !important;
+}
+
+/* Table empty state and pagination */
+html[data-theme="dark"] .employee-leave-container .ant-empty-description {
+  color: #9ca3af !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-pagination-item {
+  background: #273449 !important;
+  border-color: #4b5563 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-pagination-item a {
+  color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-pagination-item-active {
+  border-color: #818cf8 !important;
+}
+
+html[data-theme="dark"] .employee-leave-container .ant-pagination-prev button,
+html[data-theme="dark"] .employee-leave-container .ant-pagination-next button {
+  color: #e5e7eb !important;
+  background: #273449 !important;
+  border-color: #4b5563 !important;
+}
+
+/* Pending notice */
+html[data-theme="dark"] .employee-leave-container .leave-pending-notice {
+  background: #3b2d13 !important;
+  border-color: #92400e !important;
+  color: #fcd34d !important;
+}
+
+/* =========================================
+   ANT DESIGN DROPDOWNS
+   Rendered outside page wrapper
+========================================= */
+
+html[data-theme="dark"] .ant-select-dropdown {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+
+html[data-theme="dark"] .ant-select-item {
+  color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .ant-select-item-option-active,
+html[data-theme="dark"] .ant-select-item-option-selected {
+  background: #374151 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================
+   DETAILS MODAL
+   Rendered outside page wrapper
+========================================= */
+
+html[data-theme="dark"] .ant-modal-content,
+html[data-theme="dark"] .ant-modal-header {
+  background: #1f2937 !important;
+}
+
+html[data-theme="dark"] .ant-modal-title {
+  color: #f9fafb !important;
+}
+
+html[data-theme="dark"] .ant-modal-close {
+  color: #d1d5db !important;
+}
+
+html[data-theme="dark"] .ant-modal-body {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .leave-details-modal {
+  color: #e5e7eb !important;
+}
+
+html[data-theme="dark"] .leave-details-modal p,
+html[data-theme="dark"] .leave-details-modal span,
+html[data-theme="dark"] .leave-details-modal strong,
+html[data-theme="dark"] .leave-details-modal label {
+  color: #d1d5db;
+}
+
+html[data-theme="dark"] .ant-modal-footer {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .employee-leave-container {
+    padding: 12px;
+  }
+
+  .leave-page-heading {
+    align-items: flex-start;
+  }
+
+  .leave-history-card {
+    padding: 12px;
+  }
+
+  .leave-table-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .leave-search-input,
+  .leave-filter-select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leave-history-header {
+    gap: 10px;
+  }
+}
+
+/* =========================================
+   EMPLOYEE LEAVE DETAILS MODAL - DARK MODE
+   ========================================= */
+
+/* Modal main container */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-content,
+body.dark-theme .employee-leave-details-modal .ant-modal-content {
+  background: #172033 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #334155 !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+
+/* Modal header */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-header,
+body.dark-theme .employee-leave-details-modal .ant-modal-header {
+  background: #172033 !important;
+  border-bottom: 1px solid #334155 !important;
+  padding: 18px 24px !important;
+}
+
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-title,
+body.dark-theme .employee-leave-details-modal .ant-modal-title {
+  color: #f8fafc !important;
+  font-weight: 600 !important;
+}
+
+/* Modal body */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-body,
+body.dark-theme .employee-leave-details-modal .ant-modal-body {
+  background: #172033 !important;
+  color: #e2e8f0 !important;
+  padding: 24px !important;
+}
+
+/* Modal footer */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-footer,
+body.dark-theme .employee-leave-details-modal .ant-modal-footer {
+  background: #172033 !important;
+  border-top: 1px solid #334155 !important;
+  padding: 14px 24px !important;
+}
+
+/* Close icon */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-close,
+body.dark-theme .employee-leave-details-modal .ant-modal-close {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-close:hover,
+body.dark-theme .employee-leave-details-modal .ant-modal-close:hover {
+  color: #ffffff !important;
+  background: #334155 !important;
+}
+
+/* Modal title icon */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-title .anticon,
+body.dark-theme .employee-leave-details-modal .ant-modal-title .anticon {
+  color: #60a5fa !important;
+}
+
+/* Descriptions main table */
+html[data-theme="dark"] .employee-leave-details-modal .ant-descriptions-view,
+body.dark-theme .employee-leave-details-modal .ant-descriptions-view {
+  border-color: #475569 !important;
+  background: #1e293b !important;
+}
+
+html[data-theme="dark"] .employee-leave-details-modal .ant-descriptions table,
+body.dark-theme .employee-leave-details-modal .ant-descriptions table {
+  border-color: #475569 !important;
+}
+
+/* Description labels */
+html[data-theme="dark"] .employee-leave-details-modal .ant-descriptions-item-label,
+body.dark-theme .employee-leave-details-modal .ant-descriptions-item-label {
+  background: #263449 !important;
+  color: #cbd5e1 !important;
+  border-color: #475569 !important;
+  font-weight: 600 !important;
+}
+
+/* Description values */
+html[data-theme="dark"] .employee-leave-details-modal .ant-descriptions-item-content,
+body.dark-theme .employee-leave-details-modal .ant-descriptions-item-content {
+  background: #1e293b !important;
+  color: #f1f5f9 !important;
+  border-color: #475569 !important;
+  overflow-wrap: anywhere;
+}
+
+/* Text inside descriptions */
+html[data-theme="dark"] .employee-leave-details-modal .ant-descriptions-item-content *,
+body.dark-theme .employee-leave-details-modal .ant-descriptions-item-content * {
+  color: #e2e8f0;
+}
+
+/* Status section */
+html[data-theme="dark"] .employee-leave-details-modal .leave-details-status,
+body.dark-theme .employee-leave-details-modal .leave-details-status {
+  margin-bottom: 18px;
+}
+
+/* Pending notice */
+html[data-theme="dark"] .employee-leave-details-modal .leave-pending-notice,
+body.dark-theme .employee-leave-details-modal .leave-pending-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  color: #fcd34d !important;
+  background: rgba(245, 158, 11, 0.10) !important;
+  border: 1px solid rgba(245, 158, 11, 0.30) !important;
+  border-radius: 9px;
+  line-height: 1.6;
+}
+
+html[data-theme="dark"] .employee-leave-details-modal .leave-pending-notice .anticon,
+body.dark-theme .employee-leave-details-modal .leave-pending-notice .anticon {
+  color: #fbbf24 !important;
+  margin-top: 4px;
+}
+
+/* Close button */
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-footer .ant-btn,
+body.dark-theme .employee-leave-details-modal .ant-modal-footer .ant-btn {
+  background: #334155 !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+  border-radius: 7px !important;
+}
+
+html[data-theme="dark"] .employee-leave-details-modal .ant-modal-footer .ant-btn:hover,
+body.dark-theme .employee-leave-details-modal .ant-modal-footer .ant-btn:hover {
+  background: #475569 !important;
+  border-color: #64748b !important;
+}
+
+/* Modal overlay */
+html[data-theme="dark"] .employee-leave-details-modal-wrap .ant-modal-mask,
+body.dark-theme .employee-leave-details-modal-wrap .ant-modal-mask {
+  background: rgba(0, 0, 0, 0.72) !important;
+}
+
+/* =========================================
+   RESPONSIVE MODAL
+   ========================================= */
+
+@media (max-width: 576px) {
+  .employee-leave-details-modal {
+    max-width: calc(100vw - 24px);
+    margin: 12px auto;
+  }
+
+  html[data-theme="dark"] .employee-leave-details-modal .ant-modal-body,
+  body.dark-theme .employee-leave-details-modal .ant-modal-body {
+    padding: 14px !important;
+  }
+
+  .employee-leave-details-modal .ant-descriptions-item-label,
+  .employee-leave-details-modal .ant-descriptions-item-content {
+    padding: 9px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* =====================================
+   REJECTED STATUS TAG
+   ===================================== */
+
+/* Light mode */
+.leave-status-rejected {
+  color: #cf1322 !important;
+  background: #fff1f0 !important;
+  border: 1px solid #ffa39e !important;
+  font-weight: 600;
+  border-radius: 6px !important;
+}
+
+.leave-status-rejected .anticon {
+  color: #cf1322 !important;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .leave-status-rejected,
+body.dark-theme .leave-status-rejected {
+  color: #fca5a5 !important;
+  background: rgba(239, 68, 68, 0.16) !important;
+  border: 1px solid rgba(248, 113, 113, 0.40) !important;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .leave-status-rejected .anticon,
+body.dark-theme .leave-status-rejected .anticon {
+  color: #f87171 !important;
+}
+
+/* Ensure nested tag text uses the correct color */
+html[data-theme="dark"] .leave-status-rejected,
+body.dark-theme .leave-status-rejected {
+  text-shadow: none !important;
+}
