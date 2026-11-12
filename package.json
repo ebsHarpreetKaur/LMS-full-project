@@ -85,6 +85,7 @@
   },
   "devDependencies": {
     "ajv": "^8.20.0",
-    "ajv-keywords": "^5.1.0"
+    "ajv-keywords": "^5.1.0",
+    "postcss": "^8.5.32"
   }
 }
